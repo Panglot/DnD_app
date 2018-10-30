@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeRoutingModule } from './modules/home/home-routing.module';
 
-const routes: Routes = [];
+import { HomeRoutes } from './modules/home/home-routing.module';
+import { QuickReferenceRoutes } from './modules/quick-references/quick-reference-routing.module';
 
+const routes: Routes = [
+  ...QuickReferenceRoutes,
+  ...HomeRoutes
+];
+
+console.log(routes)
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(routes),
-    HomeRoutingModule
-  ],
-  exports: [RouterModule]
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
 })
 export class AppRoutingModule { }
