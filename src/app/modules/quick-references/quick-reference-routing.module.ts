@@ -7,14 +7,22 @@ import { CombatQRFComponent } from './combat-quick-reference/combat-qrf.componen
 export const QuickReferenceRoutes: Routes = [
     {
         path: 'quick-reference',
-        component: QuickRefComponent,
         children: [
-            { path: 'test', component: CombatQRFComponent },
-            { path: 'test2', component: CombatQRFComponent }
+            { path: '', component: QuickRefComponent },
+            { path: 'combat', component: CombatQRFComponent }
         ]
-    },
+    }
+];
+
+export const QuickReferenceMenu = [
     {
-        path: 'quick-reference/combat',
-        component: CombatQRFComponent
+        path: 'quck-reference',
+        name: 'Quick Reference',
+        children: [
+            {
+                path: 'combat',
+                name: 'Combat'
+            }
+        ]
     }
 ];

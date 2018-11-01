@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   items = [
-    '1',
+    { a: '1' },
     '2',
     '3'
   ];

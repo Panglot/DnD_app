@@ -9,8 +9,6 @@ const routes: Routes = [
   ...HomeRoutes
 ];
 
-console.log(routes)
-
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
