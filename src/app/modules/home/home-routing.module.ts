@@ -7,5 +7,5 @@ export const HomeRoutes: Route[] = [
 ];
 
 export const HomeMenu = [
-      { path: '', name: 'Home', direct: true }
+      { path: '', name: 'Home', base: true }
 ];

@@ -16,12 +16,13 @@ export const QuickReferenceRoutes: Routes = [
 
 export const QuickReferenceMenu = [
     {
-        path: 'quck-reference',
+        path: 'quick-reference',
         name: 'Quick Reference',
         children: [
             {
                 path: 'combat',
-                name: 'Combat'
+                name: 'Combat',
+                base: true
             }
         ]
     }
